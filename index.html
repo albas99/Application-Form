@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Application form</title>
+</head>
+<body>
+    <div class="container">
+    <div class="heading">
+    <h1 id="title">Online Application Form</h1>
+    <p id="description">Fill in the form to apply for our Beta program</p>
+    </div>
+    <div class="form">
+    <form action="" id="application-form">
+        <label for="firstname" id="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <label for="lastname" id="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" required>
+        <label for="email" id="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+        <label for="age" id="age">Age <span>(optional)</span></label>
+        <input type="number" id="number" name="number" min="1" max="99">
+        <label for="position" id="position">Which of these best describes your current position?</label>
+        <select name="position" id="position">
+            <option value=""></option>
+            <option value="CEO">CEO</option>
+            <option value="CEO">Investor</option>
+            <option value="CEO">Manager</option>
+            <option value="CEO">Clerk</option>
+        </select>
+        <p>Do you use our product frequently?</p><br>
+        <div class="frequency">
+        <input type="radio" id="yes" name="yes">
+        <label for="yes" id="yes">Yes</label><br></br>
+        <input type="radio" id="no" name="no">
+        <label for="no" id="no">No</label><br></br>
+        <input type="radio" id="sometimes" name="sometimes">
+        <label for="sometimes" id="sometimes">Not Sure</label>
+        </div>
+        <label for="favorite" id="favorite">What is your favorite part of our product?</label>
+        <select name="favorite" id="favorite">
+            <option value=""></option>
+            <option value="quality">Quality</option>
+            <option value="use">Ease of use</option>
+            <option value="support">Customer Support</option>
+            <option value="delivery">Delivery</option>
+        </select>
+        <p>What would you like us to improve? <span>(select all that may apply)</span></p><br>
+        <div class="check">
+        <input type="checkbox" id="website" name="website">
+        <label for="website" id="website">Website</label><br></br>
+        <input type="checkbox" id="mobile" name="mobile">
+        <label for="mobile" id="mobile">Mobile App</label><br></br>
+        <input type="checkbox" id="desktop" name="desktop">
+        <label for="desktop" id="desktop">Desktop App</label><br></br>
+        <input type="checkbox" id="price" name="price">
+        <label for="price" id="price">Pricing</label><br></br>
+        <input type="checkbox" id="other" name="other">
+        <label for="other" id="other">Other</label>
+        <p>Please Specify below.</p>
+        </div>
+        <textarea name="other" id="other" cols="30" rows="10"></textarea>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    </div.>
+    </div>
+</body>
+</html>
